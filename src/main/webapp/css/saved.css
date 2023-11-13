@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff; /* Set the background color */
+}
+
+.success-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.success-header {
+    background-color: #ffc0cb; /* Set the pink background color */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.success-header h1 {
+    color: #fff; /* Set text color to white */
+}
+
+.success-header p {
+    color: #fff; /* Set text color to white */
+    margin-top: 10px;
+}
+
+.login-link-container {
+    margin-top: 30px;
+}
+
+.login-link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff; /* Set text color to white */
+    background-color: #ff69b4; /* Set button color to a shade of pink */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-link:hover {
+    background-color: #e05294; /* Change button color on hover */
+}
