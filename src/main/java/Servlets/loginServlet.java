@@ -82,12 +82,13 @@ public class loginServlet extends HttpServlet {
             if (accountRepository.login(accountUsername, accountPassword, user)) {
 //                UUID uuid = accountRepository.addUUD(accountUsername, user);
 
-                System.out.println("Login successful");
+//                System.out.println("Login successful");
+//
+//                UUID uuid = accountRepository.getUserUUID(accountUsername);
 
-                UUID uuid = accountRepository.getUserUUID(accountUsername);
 
-
-                Cookie idCookie = new Cookie("id", uuid.toString());
+//                Cookie idCookie = new Cookie("id", uuid.toString());
+                Cookie idCookie = new Cookie("id", accountRepository.addUUD(accountUsername, user).toString());
                 idCookie.setMaxAge(60 * 2);
                 response.addCookie(idCookie);
 

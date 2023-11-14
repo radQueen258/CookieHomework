@@ -11,7 +11,7 @@ public interface AccountRepository {
     boolean login (String username, String password, User user) throws SQLException;
     boolean findUUID (UUID uuid) throws SQLException;
 
-    UUID getUserUUID(String username) throws SQLException;
+//    UUID getUserUUID(String username) throws SQLException;
 
-//    UUID addUUD (String username, User user) throws SQLException;
+    UUID addUUD (String username, User user) throws SQLException;
 }
